@@ -1,0 +1,10 @@
+name : codexa
+services:
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: codexa_user
+      POSTGRES_PASSWORD: codexa_password
+      POSTGRES_DB: codexa_db
+    ports:
+      - 5432:5432
